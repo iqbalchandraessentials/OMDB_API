@@ -16,9 +16,7 @@ function searchMovies() {
         $.each(movies, function (i, data) {
           $("#movie-list").append(
             `
-          <div class="container">
-          <div class="col-12">
-          <div class="row">
+
 
             <div class="col-sm-6 col-lg-4 mt-3">
             <div class="card mb-5 " style="width: 18rem;">
@@ -46,9 +44,7 @@ function searchMovies() {
             </div>
             </div>
 
-          </div>
-          </div>
-          </div>
+       
                 
                     `
           );
@@ -126,8 +122,6 @@ $("#movie-list").on("click", ".see-detail", function () {
             res.Plot +
             `
               </p>
-
-
                 </div>
                 `
         );
